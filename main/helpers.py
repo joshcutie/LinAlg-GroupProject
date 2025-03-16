@@ -17,6 +17,7 @@ def matrix_inverse_solution (matrix_a_entries, matrix_a_rows, matrix_a_cols, mat
 
     try:
         matrix_a_inv = np.linalg.inv(matrix_a)
+        print (matrix_a_inv)
     except np.linalg.LinAlgError:
         print("Matrix inversion failed")
         exit()

@@ -11,9 +11,19 @@ root.geometry("500x600")
 
 
 def run():
-    project_label = ctk.CTkLabel(root,text= "Group 5 Joshua Torrez, 3, 4",text_color="grey")
-    project_label.place(relwidth=1.4, relheight=1.95)
+    #Create all fonts and labels for the use of the GUI
+    project_label = ctk.CTkLabel(root,text= "Group 5: Joshua Torrez, Carter Tiesman, Nguyen Lam",text_color="grey")
+    project_label.place(relwidth=1.37, relheight=1.97)
 
+    sub_font = ctk.CTkFont(size = 10)
+
+    equation_label = ctk.CTkLabel(root, text = "(A   )B = ")
+    equation_label.place(x = 88, y = 348)
+
+    equation_inv_label = ctk.CTkLabel(root, text = "-1",font=sub_font)
+    equation_inv_label.place(x = 100, y = 340)
+
+    #Create all the labels needed for our
     matrix_a_label = ctk.CTkLabel(root,text = "A =")
     matrix_a_label.place(x = 150, y = 45)
     matrix_a_frame = ctk.CTkFrame(root)
@@ -51,7 +61,7 @@ def run():
             result_label.configure(text=result)
         else:
             display_result(result)
-    inverse_button = ctk.CTkButton(root, text="Inverse Solution", command=button)
+    inverse_button = ctk.CTkButton(root, text="solve", command=button)
     inverse_button.pack(pady=5)
 
 run()
