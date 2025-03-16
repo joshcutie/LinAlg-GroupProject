@@ -1,3 +1,4 @@
 ﻿# LinAlg-GroupProject
- ![alt text]([(https://github.com/joshcutie/LinAlg-GroupProject/blob/main/media/Project.png?raw=true)])
+![image](https://github.com/user-attachments/assets/9a715fbd-2e0e-4a1c-a50f-389ba6e2cbad)
+
 
